@@ -83,15 +83,15 @@ public class Drunkman {
         for (int i = 0; i < 10; ++i) {
             int rnd = (int) (Math.random() * 10);
             //Debugging of unique cards
-            /*System.out.println("Debug iteration " + i);
+            System.out.println("Debug iteration " + i);
             System.out.println(numbers.toString());
-            System.out.println(rnd);*/
+            System.out.println(rnd);
             if (numbers.contains(rnd)) {
                 while (numbers.contains(rnd)) {
                     rnd = (int) (Math.random() * 10);
                     //Debugging of unique cards
-                    /*System.out.println(numbers.contains(rnd));
-                    System.out.println(rnd);*/
+                    System.out.println(numbers.contains(rnd));
+                    System.out.println(rnd);
                 }
             }
             numbers.add(rnd);
@@ -102,9 +102,9 @@ public class Drunkman {
             }
         }
         //Debugging of unique cards
-        /*System.out.println(fp.toString());
+        System.out.println(fp.toString());
         System.out.println(sp.toString());
-        System.out.println(numbers);*/
+        System.out.println(numbers);
         numbers.clear();
         int turn = 0;
         while(turn<106)
